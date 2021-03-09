@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const User = (props) => {
   const familiar = props.familiar;
 
+  //below this is call ternary operator.. means writting conditional operator in a single line called ternary operator.
   const greetings = familiar ? (
     <h3>Welcome my friend!</h3>
   ) : (
@@ -16,15 +17,15 @@ const User = (props) => {
   );
   return (
     <div>
-      <div>
+      <div className="m-5 text-success">
         <h1>Greetings:</h1>
         {greetings}
       </div>
-      <div>
+      <div className="m-5 text-warning">
         <h1>Food:</h1>
         {greetings2}
       </div>
-      <div>
+      <div className="m-5 text-info">
         <h1>Connection:</h1>
         {familiar ? (
           <h3>Lets join my facebook and instagram.</h3>

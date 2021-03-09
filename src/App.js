@@ -6,10 +6,10 @@ import { useState } from "react";
 function App() {
   const [familiar, setFamiliar] = useState(false);
   return (
-    <div className="App">
-      <h1>Is Familiar: {familiar.toString()}</h1>
+    <div className="App mt-5">
+      <h1 className="text-danger">Is Familiar: {familiar.toString()}</h1>
       <button
-        className="m-3 p-3 bg bg-info"
+        className="m-3 p-2 fs-1 text-white bg bg-info"
         onClick={() => setFamiliar(!familiar)}
       >
         Toggle
